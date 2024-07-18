@@ -1,0 +1,166 @@
+// 1]
+
+const employee = {
+EmpId : 12,
+EmpName : 'David Rayy',
+DOJ: '12/10/2012'
+};
+
+
+document.write("Employee ID: "+employee.EmpId +"<br>"+"Employee Name: "+employee.EmpName +"<br>"+"Date of Joining: "+employee.DOJ)
+
+delete employee.EmpId;
+
+document.write("<br><br>");
+document.write("Employee ID: "+employee.EmpId +"<br>"+"Employee Name: "+employee.EmpName +"<br>"+"Date of Joining: "+employee.DOJ)
+
+//--------------------------------------------------------
+
+// 2]
+
+let library = [
+    {
+        title: 'The Road Ahead',
+        author: 'Bill Gates',
+        libraryID: 1254
+    },
+    {
+        title: 'Walter Isaacson',
+        author: 'Steve Jobs',
+        libraryID: 4264
+    },
+    {
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        author: 'Suzanne Collins',
+        libraryID: 3245
+    }
+];
+
+
+document.write("<br><br>-------------------------------------------<br><br>");
+library.sort((a, b) => a.libraryID - b.libraryID);
+
+for (let i = 0; i < library.length; i++) {
+    document.write("Title: " + library[i].title + "<br>" + "Author: " + library[i].author + "<br>" + "Library ID: " + library[i].libraryID + "<br><br>");
+}
+
+
+document.write("<br><br>-------------------------------------------<br><br>");
+
+
+// 3] 
+
+
+let countries = [
+    {
+        name: 'United States',
+        capital: 'Washington, D.C.',
+        population: 331002651
+    },
+    {
+        name: 'Canada',
+        capital: 'Ottawa',
+        population: 37742154
+    },
+    {
+        name: 'United Kingdom',
+        capital: 'London',
+        population: 67886011
+    },
+    {
+        name: 'Australia',
+        capital: 'Canberra',
+        population: 25499884
+    },
+    {
+        name: 'Germany',
+        capital: 'Berlin',
+        population: 83783942
+    },
+    {
+        name: 'France',
+        capital: 'Paris',
+        population: 65273511
+    },
+    {
+        name: 'Japan',
+        capital: 'Tokyo',
+        population: 126476461
+    },
+    {
+        name: 'India',
+        capital: 'New Delhi',
+        population: 1380004385
+    },
+    {
+        name: 'China',
+        capital: 'Beijing',
+        population: 1439323776
+    },
+    {
+        name: 'Brazil',
+        capital: 'Brasília',
+        population: 212559417
+    },
+    {
+        name: 'Russia',
+        capital: 'Moscow',
+        population: 145934462
+    },
+    {
+        name: 'South Africa',
+        capital: 'Pretoria',
+        population: 59308690
+    },
+    {
+        name: 'Mexico',
+        capital: 'Mexico City',
+        population: 128932753
+    },
+    {
+        name: 'Italy',
+        capital: 'Rome',
+        population: 60461826
+    },
+    {
+        name: 'South Korea',
+        capital: 'Seoul',
+        population: 51269185
+    }
+];
+
+
+for(let i=0;i<countries.length;i++){
+    document.write("Country: "+countries[i].name+"<br>"+"Capital: "+countries[i].capital+"<br>"+"Population: "+countries[i].population+"<br><br>");
+}
+
+
+let firstCountry = countries[0];
+let keyValuePairs = Object.entries(firstCountry);
+document.write("Key-Value Pairs:<br>");
+for (let [key, value] of keyValuePairs) {
+    document.write(`[${key}, ${value}]<br>`);
+}
+document.write("<br>");
+
+
+let swappedCountry = {};
+for (let key in firstCountry) {
+    if (firstCountry.hasOwnProperty(key)) {
+        swappedCountry[firstCountry[key]] = key;
+    }
+}
+document.write("Swapped Country:<br>");
+for (let key in swappedCountry) {
+    document.write(`${key}: ${swappedCountry[key]}<br>`);
+}
+document.write("<br>");
+
+
+
+let propertyToCheck = 'capital';
+if (firstCountry.hasOwnProperty(propertyToCheck)) {
+    document.write(`The property '${propertyToCheck}' exists in the object.<br>`);
+} else {
+    document.write(`The property '${propertyToCheck}' does not exist in the object.<br>`);
+}
