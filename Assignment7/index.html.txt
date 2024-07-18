@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Higher Order Function</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div id="display1"></div>
+  <div id="display2"></div>
+  <div id="display3"></div>
+  <div id="display4"></div>
+  <div id="display5"></div>
+  <div id="display6"></div>
+  <div id="display7"></div>
+  <div id="display8"></div>
+  <div id="display9"></div>
+  <div id="display10"></div>
+  <div id="display11"></div>
+  <div id="display12"></div>
+  <div id="display13"></div>
+  <div id="display14"></div>
+  <div id="display15"></div>
+  <div id="display16"></div>
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Date Operations</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <form>
+    <label>Enter date: </label>
+    <input type="date" id="mydate" />
+    <br><br>
+    <button type="button" onclick="myFunction1()">Submit</button>
+    <h2>Selected Date: </h2>
+    <h3 id="display"></h3>
+
+    <label for="dateFormat">Choose a date format:</label>
+    <select name="dateFormat" id="date2">
+      <option value="ISO">ISO</option>
+      <option value="Long">Long</option>
+      <option value="Short">Short</option>
+    </select>
+    <br><br>
+    <button type="button" onclick="myFunction2()">Submit</button>
+    <br><br><br>
+
+    <label>Enter day: </label>
+    <input type="number" id="day" value="1" min="1" max="31"/>
+    <br><br>
+    <label>Enter month: </label>
+    <input type="number" id="month" value="1" min="1" max="12"/>
+    <br><br>
+    <label>Enter year: </label>
+    <input type="number" id="year" value="2025" min="2025" max="9999"/>
+    <br><br>
+    <button type="button" onclick="myFunction3()">Calculate Future Date</button>
+
+    <h2>Future Date: </h2>
+    <h3 id="future"></h3>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

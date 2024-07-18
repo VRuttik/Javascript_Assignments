@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Conditions</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <label>Enter a month: </label>
+  <input type="text" value="" id="month">
+  <button onclick="myFunction()" placeholder="Enter a month">Check Season</button>
+  <h3 id="display1"></h3>
+
+  <label>Enter a day: </label>
+  <input type="text" id="day" placeholder="Enter a day">
+  <button onclick="checkDay()">Check Day</button>
+  <h3 id="display2"></h3>
+
+  <label>Enter a month: </label>
+  <input type="text" id="month" placeholder="Enter a month">
+  <button onclick="checkDaysInMonth()">Check Days</button>
+  <p id="display3"></p>
+  
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
